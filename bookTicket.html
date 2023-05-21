@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book ticket</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/index2.css">
+
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/download.png" alt="image logo">
+        </div>
+        <ul>
+            <li class="items"><a href="index3.html">Home</a></li>  <!--li.items{<a></a>}*5-->
+            <li class="items"><a href="index3.html#Ab">About us</a></li>
+            <li class="items"><a href="index3.html#feedback">Contact us</a></li> 
+            <li class="items"><a href="register.html">Register</a></li>
+            <li class="items"><a href="login.html">Login</a></li>   
+        </ul>
+        <div>
+            <ul>
+                <li class="items"><a href="bookTicket.html">Book ticket</a></li> 
+            <li class="items"><a href="cancelTicket.html">Cancel ticket</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center">
+        <h1>Book Ticket</h1>
+        <form method="POST" action="confirm_booking.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+            
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <input id="submit" type="submit" value="Book">
+            <button onclick="Reset()">Reset</button>
+        </form>
+    </div>
+    <script>
+        const Reset=()=>{
+            let username=document.getElementById("username")
+            let source=document.getElementById("source")
+            let destination=document.getElementById("destination")
+            let date=document.getElementById("date")
+            
+            username.value=""
+            source.value=""
+            destination.value=""
+            date.value=""
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+    /* navigation bar */
+#logo img{
+    height: 45x;
+    width: 45px;
+    border-radius: 50%;
+    margin: 10px 25px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+#navbar ul li a{
+    padding: 4px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition-property: text-decoration;
+    transition-duration: 6s;
+    transition-delay: 0.7s;
+    
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar ul li a:visited{
+    color: white;
+}
+#navbar ul li a:hover{
+    color: rgb(14, 64, 227);
+    background-color: rgb(239, 239, 248);
+    border-radius: 20px;
+}
+#navbar ul li a:active{
+    background-color: rgb(8, 8, 80);
+}
+#facilityContainer{
+    position: relative;
+    height: 630px;
+}
+#facilityContainer::before{
+    content: "";
+    background: url('../images/claudio-schwarz-294j9hG1N3w-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#facilityContainer h2{
+    text-align: center;
+}
+.facility{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content li{
+    color: rgb(89, 35, 88);
+}
+
+#trains{
+    display: flex;
+    margin: 10px 20px;
+    flex-direction: row;
+    }
+#trains .box{
+    /*    border: 2px solid black;*/
+    padding: 30px;
+    margin-bottom: 20px;
+}
+#trains .box img{
+    height: 180px;
+    width: 220px;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+}
+#trains .box img:hover{
+    transform: scale(1.5);
+}
+#trains .box p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+}
+.primary{
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3{
+    margin-top: 20px;
+}
+#feedback{
+    width: 20%;
+    margin: 0 auto;
+}
+#feedback img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#feedback h2{
+    margin: 10px;
+}
+.about{
+    height: 60vh;
+    background-color: rgb(246, 242, 233);
+}
+.about h3{
+    font-style: italic;
+    font-family: 'Inconsolata, monospace';
+    margin: 50px 60px;
+    text-shadow: 1px 1px rgb(189, 228, 233);
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}

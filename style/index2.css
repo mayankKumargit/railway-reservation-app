@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+.center {
+    width: 50%;
+    margin: 30px auto;
+}
+
+form {
+    width: 50%;
+    margin: 10px auto;
+}
+
+#submit {
+    width: auto;
+    background-color: rgb(85, 171, 85);
+    padding: 10px 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(9, 75, 3);
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(222, 241, 211);
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button{
+    position: relative;
+    left: 35%;
+    top: -59px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    background-color: rgb(85, 171, 85);
+    font-weight: bolder;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(9, 75, 3);
+    color: white;
+}

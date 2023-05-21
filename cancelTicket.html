@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel ticket</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/index2.css">
+
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/download.png" alt="image logo">
+        </div>
+        <ul>
+            <li class="items"><a href="index3.html">Home</a></li>  <!--li.items{<a></a>}*5-->
+            <li class="items"><a href="index3.html#Ab">About us</a></li>
+            <li class="items"><a href="index3.html#feedback">Contact us</a></li> 
+            <li class="items"><a href="register.html">Register</a></li>
+            <li class="items"><a href="login.html">Login</a></li>   
+        </ul>
+        <div>
+            <ul>
+                <li class="items"><a href="bookTicket.html">Book ticket</a></li> 
+            <li class="items"><a href="cancelTicket.html">Cancel ticket</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="center">
+        <h1>Cancel Ticket</h1>
+        <form method="post" action="cancel.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="username">
+            <label for="booking_id">Booking ID:</label>
+            <input type="text" id="booking_id" name="pnr" required placeholder="pnr number">
+            <input id="submit" type="submit" value="Cancel">
+            <button onclick="Reset()">Reset</button>
+        </form>
+    </div>
+    <script>
+        const Reset=()=>{
+            let username=document.getElementById("username")
+            let booking_id=document.getElementById("booking_id")
+            booking_id.value=""
+            username.value=""
+            
+        }
+    </script>
+</body>
+</html>
